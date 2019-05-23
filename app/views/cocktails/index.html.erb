@@ -1,0 +1,28 @@
+<div class="container pad20">
+  <!-- Heading -->
+  <h1 class="text-underline text-brand">Delicious cocktails</h1>
+
+    <!-- Grid row -->
+  <div class="row">
+    <!-- Card -->
+    <% @cocktails.each do |cocktail| %>
+
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                  url('<%= image_or_stub(cocktail, "xmnekrv7t2gigbpgsgtk") %>');">
+        <div class="card-description">
+          <h2> <%= cocktail.name  %> </h2>
+        </div>
+        <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <!-- Add button -->
+  <div class="pad10">
+    <%= link_to "Add your cocktail", new_cocktail_path, class: "btn btn-primary pad20" %>
+  </div>
+
+<!-- Close main div -->
+</div>
