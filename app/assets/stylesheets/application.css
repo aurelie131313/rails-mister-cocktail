@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+@import "vendor/index";
+
+.pad20 {
+  margin-top: 20px;
+}
+
+.pad10 {
+  margin-top: 10px;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-gray {
+  color: $light-gray;
+}
+
+.text-brand {
+  color: $brand-color;
+}
