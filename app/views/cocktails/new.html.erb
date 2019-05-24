@@ -1,12 +1,15 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h1>Create a new cocktail</h1>
+<h1>Create a New Cocktail</h1>
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
 
-      <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
-      <% end %>
-    </div>
+  <%= f.input :name, autofocus: true %>
+  <%= f.input :about %>
+  <%= f.input :instructions %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+
+  <div>
+    <%= f.button :submit %>
+    <%= link_to "Cancel", request.referer.present? ? request.referer : root_path, class: "btn btn-default" %>
   </div>
-</div>
+<% end %>

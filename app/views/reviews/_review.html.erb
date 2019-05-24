@@ -1,0 +1,14 @@
+<div class="review-card">
+  <div class="avatar-card-and-rating-wrapper">
+    <div class="avatar-container">
+    <%= render 'shared/avatar_card', { user: review.user, timestamp: review.created_at } %>
+    </div>
+    <div class="rating-container">
+      <p id="review-rating"><%= set_stars(review.rating) %></p>
+    </div>
+  </div>
+  <div class="review-content-wrapper">
+    <p id="review-content"><%= review.content %></p>
+  </div>
+  <hr>
+</div>

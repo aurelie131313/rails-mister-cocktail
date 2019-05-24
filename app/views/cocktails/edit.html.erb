@@ -1,0 +1,28 @@
+<div class="left-container">
+  <%= simple_form_for(@cocktail) do |f| %>
+    <%= f.error_notification %>
+    <h1>
+      <%= link_to @cocktail.name.upcase, cocktail_path(@cocktail) %>
+    </h1>
+    <h3>ABOUT THE <%= @cocktail.name.upcase %> COCKTAIL</h3>
+    <%= f.input :about, label: false %>
+    <h3>HOW TO MAKE THE <%= @cocktail.name.upcase %> COCKTAIL</h3>
+    <%= f.input :instructions, label: false %>
+    <%= f.button :submit, class: "btn btn-default" %>
+    <%= link_to "Delete Cocktail", cocktail_path(@cocktail), method: :delete, class: "btn btn-default", :data => {:confirm => "Are You Sure?"} %>
+    <%= link_to "Cancel", request.referer.present? ? request.referer : root_path, class: "btn btn-default" %>
+
+<% end %>
+</div>
+<div class="right-container">
+  <div class="img-responsive">
+    <%= image_tag @cocktail.photo, class: "img-responsive" %>
+  </div>
+  <% if @cocktail.doses.any? %>
+    <%= render 'ingredients_edit' %>
+  <% end %>
+  <strong>Add Ingredient:</strong>
+  <%= render 'doses/new', cocktail: @cocktail, dose: @dose %>
+</div>
+
+

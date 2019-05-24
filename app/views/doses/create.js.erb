@@ -1,0 +1,14 @@
+<% if @dose.errors.any? %>
+  $('#new_dose').html("<%= j render 'doses/new', cocktail: @cocktail, dose: @dose %>");
+<% else %>
+  // Create a paragraph for the new review. But hide it.
+  var new_dose = $("<%= j render 'doses/show', dose: @dose %>").hide()
+  console.log(new_dose)
+  // Add it to the DOM, at the end of the existing reviews. It's still hidden.
+  $('#ingredients-list').append(new_dose);
+  // Show the new review with an animation!
+  new_dose.fadeIn();
+  // Reset the form
+  $('#new_dose').html("<%= j render 'doses/new', cocktail: @cocktail, dose: Dose.new %>");
+<% end %>
+

@@ -1,0 +1,40 @@
+// Your footer style
+footer {
+  padding: 15px 0;
+  text-align: center;
+  background: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span.copyright {
+    padding-left: 10px;
+    color: #FFF;
+    text-transform: none;
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 35px;
+  }
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+
+  li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    outline: 0;
+    color: #FFF;
+    background-color: transparent;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+
+    :hover,:focus,:active {
+      color: #da552f;
+    }
+  }
+}

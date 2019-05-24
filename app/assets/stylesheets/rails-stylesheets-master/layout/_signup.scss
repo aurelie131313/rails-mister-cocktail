@@ -1,0 +1,137 @@
+.signup-login-btn-container {
+    margin-top: 5px;
+    position: relative;
+}
+
+.signup-or-separator {
+    background-color: none;
+    height: 34px;
+    position: relative;
+    text-align: center;
+}
+
+.signup-or-separator-text {
+    background-color: #fff;
+    display: inline-block;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #767676;
+}
+
+.signup-or-separator hr {
+    margin: -16px auto 10px;
+    width: 100%;
+}
+
+.signup-login-btn-xl {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight:normal;
+}
+
+.btn-facebook {
+    border-color: #3B5998;
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.btn-facebook:hover,
+.btn-facebook:active,
+.btn-facebook:focus {
+    border-color: #4c70ba;
+    background-color: #4c70ba;
+    color: #fff;
+}
+
+.btn-google {
+    border-color: #db3236;
+    background-color: #db3236;
+    color: #fff;
+}
+
+.btn-google:hover,
+.btn-google:active,
+.btn-google:focus {
+    border-color: #e35d60;
+    background-color: #e35d60;
+    color: #fff;
+}
+
+.icon-facebook {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.icon-google {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 18px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.signup-login-switch-btn {
+    font-weight: normal;
+    border: 1px solid #90c695;
+    color: #90c695;
+    float:right;
+}
+
+.signup-login-switch-btn:hover,
+.signup-login-switch-btn:focus,
+.signup-login-switch-btn:active {
+    border: 1px solid #6eb575 !important;
+    color: #6eb575 !important;
+}
+
+.signup-login-switch-text {
+    float:left;
+    display: inline-block;
+    margin: 4px;
+    line-height: 34px;
+    font-size: 16px;
+}
+
+.signup-login-modal-window {
+    margin-top: 200px;
+
+}
+
+#login-modal,
+#signup-modal,
+#pwdreset-modal {
+    margin-top: 200px;
+}
+
+.pwdreset-heading {
+    background-color: #ccc;
+    padding: 3px 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.popover-container {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+
+  .popover-row {
+    padding-right: 0;
+    padding-left: 0;
+    display: inline-block
+  }
+}

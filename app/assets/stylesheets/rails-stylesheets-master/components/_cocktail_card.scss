@@ -1,0 +1,18 @@
+.cocktail-card {
+  margin-top: 20px;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img:hover {
+    opacity: 0.9;
+  }
+}
+
+.link-to-user {
+  font-weight: bold;
+    :hover {
+      text-decoration: underline !important;
+    }
+}

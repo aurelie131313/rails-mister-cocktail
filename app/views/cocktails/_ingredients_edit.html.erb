@@ -1,0 +1,9 @@
+<div id="ingredients">
+  <hr>
+  <strong>Ingredients:</strong>
+  <ul id="ingredients-list">
+    <% @cocktail.doses.each do |dose| %>
+      <%= render 'doses/edit', cocktail: @cocktail, dose: dose %>
+    <% end %>
+  </ul>
+</div>

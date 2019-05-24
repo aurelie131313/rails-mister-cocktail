@@ -1,0 +1,60 @@
+/* -------------------------------------
+ * Utilities classes
+ * These are examples of utilities classes
+ * Feel free to change them and create your own
+ * ------------------------------------- */
+// General
+a {
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus, a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+// Paddings
+.padded {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.padded-right {
+  padding-right: 10px;
+}
+
+// Backgrounds
+.bg-black {
+  background: #4a4a4a;
+}
+.bg-grey {
+  background: #aeaeae;
+}
+.bg-blue {
+  background: #00a3e1;
+}
+.bg-dark-blue {
+  background: #3b5998;
+}
+
+
+// Alignment
+
+.left-align {
+  justify-content: flex-start;
+}
+
+.valign {
+  display: flex;
+  align-items: center;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}

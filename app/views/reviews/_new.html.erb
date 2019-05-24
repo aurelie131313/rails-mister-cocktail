@@ -1,6 +1,5 @@
-<h3>Add a review</h3>
-<%= simple_form_for [cocktail, review] do |f| %>
-  <%= f.input :rating, collection: 0..5 %>
+<%= simple_form_for [@cocktail, @review], url: cocktail_reviews_path(@cocktail), remote: true do |f| %>
   <%= f.input :content %>
-  <%= f.submit class: "btn btn-primary"%>
+  <%= f.input :rating, collection: (0..5) %>
+  <%= f.button :submit, value: 'Add Review', class: "btn btn-default btn-rounded" %>
 <% end %>
